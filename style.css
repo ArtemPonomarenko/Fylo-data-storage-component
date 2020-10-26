@@ -22,7 +22,7 @@ body {
   background-image: url("images/bg-desktop.png");
   background-size: cover;
   background-repeat: no-repeat;
-  bottom: -35px;
+  bottom: -50px;
   left: 0;
 }
 /* file-component */
@@ -178,4 +178,56 @@ progress::-webkit-progress-value {
   text-align: center;
   letter-spacing: 1px;
   margin-left: 7px;
+}
+/* Media queries */
+@media screen and (max-width: 880px){
+  .back {
+      width: 100%;
+      height: 100%;
+      background-image: url(images/bg-desktop.png);
+      background-position: 29% 0px;
+      top: 0;
+      left: 0px;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 413px;
+  }
+  .file-component {
+    width: 326px;
+    height: 201px;
+  }
+  .upload-bar-component {
+    width: 326px;
+    height: 160px;
+    margin-top: -20px;
+  }
+  .bar-title {
+    margin: 33px 0 17px 49px;
+}
+.bar-block {
+  margin-left: 32px;
+}
+.loading-bar::after {
+  left: 62.9%;
+}
+  progress {
+    width: 259px;
+  }
+  progress::-webkit-progress-bar {
+    width: 259px;
+  }
+  .amount-left::after {
+    visibility: hidden;
+  }
+  .amount-left {
+    border-radius: 10px;
+    bottom: -5.4rem;
+    right: 25%;
+  }
+  .value {
+    margin: 6px 32px 0px 1px;
+}
 }
